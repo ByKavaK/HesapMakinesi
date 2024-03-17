@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/ekran"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="35dp"
+        android:layout_above="@+id/sayilar"/>
+    
+    <LinearLayout
+        android:id="@+id/sayilar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <Button
+                android:id="@+id/ac"
+                android:text="Ac"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/sayi7"
+                android:text="7"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi4"
+                android:text="4"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi1"
+                android:text="1"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sil"
+                android:text="Sil"
+                style="@style/Button1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/kapat"
+                android:text="Kpt"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/sayi8"
+                android:text="8"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi5"
+                android:text="5"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi2"
+                android:text="2"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi0"
+                android:text="0"
+                style="@style/Button2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/temizle"
+                android:text="TMZ"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/sayi9"
+                android:text="9"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi6"
+                android:text="6"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/sayi3"
+                android:text="3"
+                style="@style/Button2"/>
+            <Button
+                android:id="@+id/nokta"
+                android:text="."
+                style="@style/Button2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bol"
+                android:text="/"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/carp"
+                android:text="X"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/cikar"
+                android:text="-"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/topla"
+                android:text="+"
+                style="@style/Button1"/>
+            <Button
+                android:id="@+id/esittir"
+                android:text="="
+                style="@style/Button1"/>
+        </LinearLayout>
+            
+    </LinearLayout>
+</RelativeLayout>
